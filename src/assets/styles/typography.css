@@ -1,0 +1,39 @@
+@import "../fonts/inter";
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue-600: #0066FF
+  --blue-700: #3369f3;
+  --blue-900: #122331;
+  --blue-1000: #102129;
+  --red-700: #ff2f2f;
+  --gray-200: #EFEFEF;
+  --gray-300: #EAEAEA;
+  --gray-700: #999999;
+  --gray-900: #525252;
+  --2xs: 8px;
+  --xs: 9px;
+  --sm: 11px;
+  --base: 12px;
+  --tiny: 13px;
+  --md: 15px;
+  --lg: 16px;
+  --xl: 20px;
+  --leading-8: 8px;
+  --leading-9: 9px;
+  --leading-11: 11px;
+  --leading-13: 13px;
+  --leading-14: 14px;
+  --leading-15: 15px;
+  --leading-16: 16px;
+  --leading-20: 20px;
+}
+
+.error {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--2xs);
+  line-height: var(--leading-8);
+}
