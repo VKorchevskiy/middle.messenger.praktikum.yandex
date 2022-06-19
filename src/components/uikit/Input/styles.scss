@@ -1,0 +1,22 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid var(--blue-700);
+    background-color: var(--blue-900);
+  }
+
+  &__input_error {
+    margin-bottom: 7px;
+  }
+
+  &input__error {
+    margin-bottom: 16px;
+  }
+
+  &__label {
+    margin-bottom: 8px;
+  }
+}

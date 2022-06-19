@@ -1,0 +1,8 @@
+<div style="{{style}}" class="input {{className}}">
+  <label class="input__label" for="{{name}}">{{labelText}}</label>
+  <input class="input__input {{#if errorText}} input__input_error {{/if}}" id="{{name}}" name="{{name}}" type="{{type}}" />
+  {{#if errorText}}
+    <span class="error input__error">{{errorText}}</span>
+  {{/if}}
+</div>
+
