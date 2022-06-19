@@ -3,13 +3,13 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --blue-600: #0066FF
+  --blue-600: #0066ff;
   --blue-700: #3369f3;
   --blue-900: #122331;
   --blue-1000: #102129;
   --red-700: #ff2f2f;
-  --gray-200: #EFEFEF;
-  --gray-300: #EAEAEA;
+  --gray-200: #efefef;
+  --gray-300: #eaeaea;
   --gray-700: #999999;
   --gray-900: #525252;
   --2xs: 8px;
@@ -20,6 +20,7 @@
   --md: 15px;
   --lg: 16px;
   --xl: 20px;
+  --2xl: 40px;
   --leading-8: 8px;
   --leading-9: 9px;
   --leading-11: 11px;
@@ -28,6 +29,7 @@
   --leading-15: 15px;
   --leading-16: 16px;
   --leading-20: 20px;
+  --leading-40: 40px;
 }
 
 .error {
@@ -36,4 +38,18 @@
   font-style: normal;
   font-size: var(--2xs);
   line-height: var(--leading-8);
+}
+
+.link {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--sm);
+  line-height: var(--leading-11);
+  text-decoration: none;
+  color: var(--blue-700);
+}
+
+.link:hover {
+  color: var(--white);
 }

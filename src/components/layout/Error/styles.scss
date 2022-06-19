@@ -1,0 +1,20 @@
+.error-page {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: var(--2xl);
+    line-height: var(--leading-40);
+  }
+
+  &__description {
+    margin-bottom: 69px;
+    font-weight: 500;
+    font-size: var(--xl);
+    line-height: var(--leading-20);
+  }
+}
