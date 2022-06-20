@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 
+  &__label {
+    color: var(--gray-700);
+  }
+
   &__input {
     border: none;
     border-bottom: 1px solid var(--blue-700);

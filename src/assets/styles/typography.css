@@ -12,32 +12,88 @@
   --gray-300: #eaeaea;
   --gray-700: #999999;
   --gray-900: #525252;
-  --2xs: 8px;
-  --xs: 9px;
-  --sm: 11px;
-  --base: 12px;
-  --tiny: 13px;
-  --md: 15px;
-  --lg: 16px;
-  --xl: 20px;
-  --2xl: 40px;
-  --leading-8: 8px;
-  --leading-9: 9px;
-  --leading-11: 11px;
-  --leading-13: 13px;
-  --leading-14: 14px;
-  --leading-15: 15px;
-  --leading-16: 16px;
-  --leading-20: 20px;
-  --leading-40: 40px;
+  --3xs: 8px;
+  --2xs: 9px;
+  --xs: 11px;
+  --sm: 12px;
+  --base: 13px;
+  --tiny: 15px;
+  --md: 16px;
+  --lg: 20px;
+  --xl: 40px;
+  --leading-3xs: 10px;
+  --leading-2xs: 11px;
+  --leading-xs: 13px;
+  --leading-sm: 14px;
+  --leading-base: 15px;
+  --leading-tiny: 17px;
+  --leading-md: 20px;
+  --leading-lg: 24px;
+  --leading-xl: 46px;
 }
 
-.error {
+.text-3xs {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--3xs);
+  line-height: var(--leading-3xs);
+}
+.text-2xs {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--2xs);
+  line-height: var(--leading-2xs);
+}
+.text-xs {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--xs);
+  line-height: var(--leading-xs);
+}
+.text-sm {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--sm);
+  line-height: var(--leading-sm);
+}
+.text-base {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--base);
+  line-height: var(--leading-base);
+}
+.text-tiny {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--tiny);
+  line-height: var(--leading-tiny);
+}
+.text-md {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--md);
+  line-height: var(--leading-md);
+}
+.text-lg {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--lg);
+  line-height: var(--leading-lg);
+}
+.text-xl {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--xl);
+  line-height: var(--leading-xl);
+}
+
+.error-text {
   font-family: "Inter";
   font-weight: 400;
   font-style: normal;
   font-size: var(--2xs);
   line-height: var(--leading-8);
+  color: var(--red-700);
 }
 
 .link {
@@ -51,5 +107,5 @@
 }
 
 .link:hover {
-  color: var(--white);
+  color: var(--gray-200);
 }
