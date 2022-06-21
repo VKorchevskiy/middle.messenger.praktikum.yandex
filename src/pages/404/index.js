@@ -1,9 +1,9 @@
-import Error from "./components/layout/Error/Error.hbs";
+import ErrorPage from "../../components/layout/ErrorPage/index";
 
 const root = document.querySelector("#root");
 root.insertAdjacentHTML(
   "afterbegin",
-  Error({
+  ErrorPage({
     title: 404,
     description: "Не найдено",
     href: "#",

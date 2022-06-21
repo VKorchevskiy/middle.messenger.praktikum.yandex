@@ -1,5 +1,28 @@
-import Handlebars from "handlebars/dist/handlebars.runtime";
+import "./styles.scss";
+import getRenderedTemplate from "../../../utils/getRenderedTemplate";
 
-import Input from "./Input.hbs";
+const INPUT = `<div 
+  style="{{style}}" 
+  class="input {{className}}">
+  <label 
+    class="input__label text-base" 
+    for="{{name}}">
+    {{labelText}}
+  </label>
+  <input 
+    class="input__input" 
+    id="{{name}}" 
+    name="{{name}}" 
+    type="{{type}}" />
+  <span 
+    class="input__error error-text">
+    {{errorText}}
+  </span>
+</div>`;
 
-Handlebars.registerPartial("Input", Input);
+function Input(props) {
+  //   const { style, className, name, labelText, type, errorText } = props;
+  return getRenderedTemplate(INPUT, props);
+}
+
+export default Input;

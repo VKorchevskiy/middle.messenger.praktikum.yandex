@@ -1,14 +1,19 @@
-import Input from "./components/uikit/Input/Input.hbs";
-import { styles } from "./components/uikit/Input/styles.scss";
+import Error from "./components/layout/ErrorPage/index";
+import SignForm from "./components/layout/SignForm";
+import Input from "./components/uikit/Input";
+import COMPONENTS from "./utils/COMPONENTS";
 
 const root = document.querySelector("#root");
+const context = {
+  description: "dfsfd",
+  title: "Text 1",
+  href: "#",
+};
+
 root.insertAdjacentHTML(
   "afterbegin",
-  Input({
-    style: "margin-bottom: 16px",
-    name: "qqq",
-    labelText: "button_with-text",
-    type: "text",
-    errorText: "sgs",
+  COMPONENTS.SignForm({
+    title: "Авторизации",
+    inputs: [1, 2, 3],
   })
 );

@@ -1,5 +1,14 @@
-import Handlebars from "handlebars/dist/handlebars.runtime";
+import "./styles.scss";
+import getRenderedTemplate from "../../../utils/getRenderedTemplate";
 
-import Button from "./button.hbs";
+const BUTTON = `<button
+  type="{{type}}"
+  class="button text-base {{className}}"
+>{{children}}</button>`;
 
-Handlebars.registerPartial("Button", Button);
+function Button(props) {
+  //   const { description, title, href } = props;
+  return getRenderedTemplate(BUTTON, props);
+}
+
+export default Button;
