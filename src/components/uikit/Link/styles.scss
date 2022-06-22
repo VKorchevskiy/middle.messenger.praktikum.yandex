@@ -1,0 +1,22 @@
+.button {
+  background-color: var(--blue-700);
+  color: var(--white);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+
+  &_with-text {
+    border-radius: 8px;
+    width: 280px;
+    min-height: 37px;
+  }
+
+  &_with-icon {
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+  }
+}
