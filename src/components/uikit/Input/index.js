@@ -10,12 +10,12 @@ const INPUT = `<div
     {{labelText}}
   </label>
   <input 
-    class="input__input" 
+    class="input__input {{#if errorText input__input_error }}"
     id="{{name}}" 
     name="{{name}}" 
     type="{{type}}" />
   <span 
-    class="input__error error-text">
+    class="input__error error-text {{#if errorText input__error_visible input__error_hidden }}">
     {{errorText}}
   </span>
 </div>`;

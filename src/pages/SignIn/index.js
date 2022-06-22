@@ -10,7 +10,7 @@ root.insertAdjacentHTML(
     buttons: [{ type: "button", className: "", children: "Войти" }],
     inputs: [
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "login",
         labelText: "Логин",

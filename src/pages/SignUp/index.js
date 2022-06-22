@@ -12,7 +12,7 @@ root.insertAdjacentHTML(
     ],
     inputs: [
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "email",
         labelText: "Почта",
@@ -20,7 +20,7 @@ root.insertAdjacentHTML(
         errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "login",
         labelText: "Логин",
@@ -28,7 +28,7 @@ root.insertAdjacentHTML(
         errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "first_name",
         labelText: "Имя",
@@ -36,7 +36,7 @@ root.insertAdjacentHTML(
         errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "second_name",
         labelText: "Фамилия",
@@ -44,7 +44,7 @@ root.insertAdjacentHTML(
         errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "phone",
         labelText: "Телефон",
@@ -52,7 +52,7 @@ root.insertAdjacentHTML(
         errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "password",
         labelText: "Пароль",

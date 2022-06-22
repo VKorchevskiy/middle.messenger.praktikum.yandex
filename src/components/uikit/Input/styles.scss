@@ -11,14 +11,23 @@
     border-bottom: 1px solid var(--blue-700);
     background-color: var(--blue-900);
     color: var(--white);
+    margin-bottom: 16px;
   }
 
   &__input_error {
     margin-bottom: 7px;
   }
 
-  &input__error {
+  &__error {
     margin-bottom: 16px;
+
+    &_visible {
+      display: block;
+    }
+
+    &_hidden {
+      display: none;
+    }
   }
 
   &__label {

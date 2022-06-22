@@ -11,15 +11,14 @@ root.insertAdjacentHTML(
     buttons: [{ type: "button", className: "", children: "Сохранить" }],
     inputs: [
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "email",
         labelText: "Почта",
         type: "text",
-        errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "login",
         labelText: "Логин",
@@ -27,7 +26,7 @@ root.insertAdjacentHTML(
         errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "first_name",
         labelText: "Имя",
@@ -35,15 +34,14 @@ root.insertAdjacentHTML(
         errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "second_name",
         labelText: "Фамилия",
         type: "text",
-        errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "display_name",
         labelText: "Имя в чате",
@@ -51,7 +49,7 @@ root.insertAdjacentHTML(
         errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "phone",
         labelText: "Телефон",
@@ -60,10 +58,4 @@ root.insertAdjacentHTML(
       },
     ],
   })
-
-  // COMPONENTS.Button({
-  //   type: "button",
-  //   className: "sfd",
-  //   children: "Сохранить",
-  // })
 );

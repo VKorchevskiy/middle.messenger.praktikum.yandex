@@ -10,7 +10,7 @@ root.insertAdjacentHTML(
     buttons: [{ type: "button", className: "", children: "Сохранить" }],
     inputs: [
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "oldPassword",
         labelText: "Старый пароль",
@@ -18,7 +18,7 @@ root.insertAdjacentHTML(
         errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "newPassword",
         labelText: "Новый пароль",
@@ -26,7 +26,7 @@ root.insertAdjacentHTML(
         errorText: "Ошибка",
       },
       {
-        style: "marginBottom: 16px",
+        style: "",
         className: "",
         name: "newPasswordToo",
         labelText: "Повторите новый пароль",
