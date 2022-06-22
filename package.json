@@ -4,8 +4,8 @@
   "description": "### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main.  ### ВАЖНО: pull request должен называться “Sprint i” (i — номер спринта).",
   "scripts": {
     "dev": "rm -rf dist/ && parcel *.html src/static/*.html --dist-dir ./dist",
-    "build": "rm -rf static/ .cache/ .parcel-cache/ && parcel build *.html src/static/*.html --dist-dir ./static",
-    "deploy": "parcel build *.html src/static/*.html --dist-dir ./dist",
+    "watch": "rm -rf static/ .cache/ .parcel-cache/ && parcel build *.html src/static/*.html --dist-dir ./static",
+    "build": "parcel build *.html src/static/*.html --dist-dir ./dist",
     "start": "npm run build && nodemon server.js"
   },
   "repository": {
