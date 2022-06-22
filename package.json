@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main.  ### ВАЖНО: pull request должен называться “Sprint i” (i — номер спринта).",
   "scripts": {
-    "dev": "parcel *.html src/static/*.html",
+    "dev": "rm -rf dist/ && parcel *.html src/static/*.html --dist-dir ./dist",
     "build": "rm -rf static/ .cache/ .parcel-cache/ && parcel build *.html src/static/*.html --dist-dir ./static",
     "start": "npm run build && nodemon server.js"
   },
