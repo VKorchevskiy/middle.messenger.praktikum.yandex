@@ -1,0 +1,16 @@
+.user-info-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--blue-700);
+  padding-bottom: 7px;
+
+  &__name {
+    color: var(--gray-700);
+  }
+
+  &__value {
+    border: none;
+    color: var(--white);
+  }
+}

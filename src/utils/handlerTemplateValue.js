@@ -28,7 +28,9 @@ function handlerTemplateValue(context, templateValue) {
       }
       case "#if": {
         const [_, propsKey, ifTrue, ifFalse] = templateValue;
-        return getValue(context, propsKey) ? ifTrue : ifFalse;
+        return getValue(context, propsKey)
+          ? getValue(context, propsKey, ifTrue)
+          : getValue(context, propsKey, ifFalse);
       }
       default:
         return "";

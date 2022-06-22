@@ -1,10 +1,11 @@
-import COMPONENTS from "./utils/COMPONENTS";
+import Form from "../../components/layout/Form";
+import UserData from "../../components/layout/UserData";
 
 const root = document.querySelector("#root");
 
 root.insertAdjacentHTML(
   "afterbegin",
-  COMPONENTS.UserData({
+  UserData({
     links: [
       { href: "#", className: "", children: "Назад" },
       { href: "#", className: "", children: "Изменить данные" },
