@@ -1,12 +1,11 @@
-import COMPONENTS from "./utils/COMPONENTS";
+import Form from "../../components/layout/Form";
 
 const root = document.querySelector("#root");
 
 root.insertAdjacentHTML(
   "afterbegin",
-  COMPONENTS.Form({
+  Form({
     title: "Изменить данные профиля",
-    children: "fsdgvsdv",
     links: [{ href: "#", className: "", children: "Назад" }],
     buttons: [{ type: "button", className: "", children: "Сохранить" }],
     inputs: [

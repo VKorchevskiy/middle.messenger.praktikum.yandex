@@ -1,8 +1,8 @@
 import Templator from "./Templator";
 
 function getRenderedTemplate(template, props) {
-  const tmpl = new Templator(template);
-  const renderedTemplate = tmpl.compile(props);
+  const currentTemplate = new Templator(template);
+  const renderedTemplate = currentTemplate.compile(props);
   return renderedTemplate;
 }
 
