@@ -1,9 +1,9 @@
 function getValue(obj, path, defaultValue) {
-  const keys = path?.split(".");
+  const keys = path.split(".");
 
   let result = obj;
   for (let key of keys) {
-    result = result[key];
+    result = result?.[key];
 
     if (result === undefined) {
       return defaultValue;

@@ -1,4 +1,3 @@
-import Form from "../../components/layout/Form";
 import UserData from "../../components/layout/UserData";
 
 const root = document.querySelector("#root");

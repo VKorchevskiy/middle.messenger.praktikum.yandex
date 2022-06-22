@@ -2,6 +2,7 @@ import ErrorPage from "../components/layout/ErrorPage";
 import Form from "../components/layout/Form";
 import InWork from "../components/layout/InWork";
 import UserData from "../components/layout/UserData";
+import Avatar from "../components/uikit/Avatar";
 import Button from "../components/uikit/Button";
 import Input from "../components/uikit/Input";
 import Link from "../components/uikit/Link";
@@ -16,6 +17,7 @@ const COMPONENTS = {
   InWork: InWork,
   UserInfoItem: UserInfoItem,
   UserData: UserData,
+  Avatar: Avatar,
 };
 
 export default COMPONENTS;
