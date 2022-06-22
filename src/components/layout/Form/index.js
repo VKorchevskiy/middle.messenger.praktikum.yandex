@@ -16,7 +16,7 @@ const FORM = `<form class="wrapper form">
   `;
 
 function Form(props) {
-  //   const { title, link, button, inputs } = props;
+  //   const { title, links, buttons, inputs } = props;
   return getRenderedTemplate(FORM, props);
 }
 

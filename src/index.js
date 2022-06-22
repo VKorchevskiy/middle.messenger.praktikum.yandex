@@ -60,4 +60,10 @@ root.insertAdjacentHTML(
       },
     ],
   })
+
+  // COMPONENTS.Button({
+  //   type: "button",
+  //   className: "sfd",
+  //   children: "Сохранить",
+  // })
 );

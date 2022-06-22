@@ -16,17 +16,30 @@ class Templator {
     let key = null;
     const regExp = this.TEMPLATE_REGEXP;
 
-    // Важно делать exec именно через константу, иначе уйдёте в бесконечный цикл
-    while ((key = regExp.exec(template))) {
-      // if (key[1]) {
-      const templateValue = key[1].trim().split(" ");
+    const arrKeys = template.match(regExp);
+
+    for (let i = 0; i < arrKeys.length; i++) {
+      const templateValueWithPattern = arrKeys[i];
+      const templateValue = arrKeys[i].slice(2, -2).trim().split(" ");
       const data = handlerTemplateValue(context, templateValue);
-      // console.log(data);
-      // console.log(template);
-      template = template.replace(new RegExp(key[0], "gi"), data);
-      // console.log(template);
-      // }
+      template = template.replace(
+        new RegExp(templateValueWithPattern, "gi"),
+        data
+      );
     }
+
+    // Важно делать exec именно через константу, иначе уйдёте в бесконечный цикл
+    // while ((key = regExp.exec(template)) !== null) {
+    //   console.log(key);
+    //   if (key[1]) {
+    //     const templateValue = key[1].trim().split(" ");
+    //     const data = handlerTemplateValue(context, templateValue);
+    //     console.log(data);
+    //     console.log(template);
+    //     template = template.replace(new RegExp(key[0], "gi"), data);
+    //     console.log(template);
+    //   }
+    // }
 
     return template;
   };
