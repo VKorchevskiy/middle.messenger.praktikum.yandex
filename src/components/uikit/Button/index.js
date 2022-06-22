@@ -1,9 +1,7 @@
 import "./styles.scss";
 import getRenderedTemplate from "../../../utils/getRenderedTemplate";
 
-const BUTTON = `<button
-  type="{{type}}"
-  class="button text-base {{className}}">
+const BUTTON = `<button type="{{type}}" class="button text-base {{className}}">
     {{children}}
   </button>`;
 

@@ -2,7 +2,7 @@ import getValue from "./getValue";
 
 import COMPONENTS from "./COMPONENTS";
 
-function map(contexts, component) {
+function _map(contexts, component) {
   return contexts.length !== 0
     ? contexts.map((item) => COMPONENTS[component](item)).join("")
     : "";
@@ -18,17 +18,17 @@ function handlerTemplateValue(context, templateValue) {
       case "#for": {
         const [_, propsKey, component] = templateValue;
         // console.log(context[propsKey]);
-        return map(context[propsKey], component);
+        return _map(getValue(context, propsKey), component);
       }
       case ">": {
         const [_, propsKey, component] = templateValue;
         // console.log(context[propsKey], COMPONENTS[component]);
         // console.log(COMPONENTS[component](context[propsKey]));
-        return COMPONENTS[component](context[propsKey]);
+        return COMPONENTS[component](getValue(context, propsKey));
       }
       case "#if": {
         const [_, propsKey, ifTrue, ifFalse] = templateValue;
-        return context[propsKey] ? ifTrue : ifFalse;
+        return getValue(context, propsKey) ? ifTrue : ifFalse;
       }
       default:
         return "";

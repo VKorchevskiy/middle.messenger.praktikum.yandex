@@ -1,0 +1,16 @@
+.in_work {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  &__description {
+    margin-bottom: 69px;
+    font-weight: 500;
+  }
+}

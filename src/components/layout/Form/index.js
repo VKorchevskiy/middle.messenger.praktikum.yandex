@@ -2,12 +2,8 @@ import "./styles.scss";
 import getRenderedTemplate from "../../../utils/getRenderedTemplate";
 
 const FORM = `<form class="wrapper form">
-    <p class="form__title">
-      {{title}}
-    </p>
-    <div class="form__inputs">
-      {{#for inputs Input}}
-    </div>
+    <p class="form__title">{{title}}</p>
+    <div class="form__inputs">{{#for inputs Input}}</div>
     <div class="form__actions">
       {{#for buttons Button}}
       {{#for links Link}}
