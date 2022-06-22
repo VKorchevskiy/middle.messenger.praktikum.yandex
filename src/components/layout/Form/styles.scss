@@ -1,0 +1,22 @@
+.form {
+  width: 340px;
+  margin: auto;
+  padding: 50px 30px 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  justify-items: center;
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  &__actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    justify-items: center;
+  }
+}

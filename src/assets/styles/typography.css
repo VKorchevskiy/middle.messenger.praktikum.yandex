@@ -1,0 +1,111 @@
+@import "../fonts/inter";
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue-600: #0066ff;
+  --blue-700: #3369f3;
+  --blue-900: #122331;
+  --blue-1000: #102129;
+  --red-700: #ff2f2f;
+  --gray-200: #efefef;
+  --gray-300: #eaeaea;
+  --gray-700: #999999;
+  --gray-900: #525252;
+  --3xs: 8px;
+  --2xs: 9px;
+  --xs: 11px;
+  --sm: 12px;
+  --base: 13px;
+  --tiny: 15px;
+  --md: 16px;
+  --lg: 20px;
+  --xl: 40px;
+  --leading-3xs: 10px;
+  --leading-2xs: 11px;
+  --leading-xs: 13px;
+  --leading-sm: 14px;
+  --leading-base: 15px;
+  --leading-tiny: 17px;
+  --leading-md: 20px;
+  --leading-lg: 24px;
+  --leading-xl: 46px;
+}
+
+.text-3xs {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--3xs);
+  line-height: var(--leading-3xs);
+}
+.text-2xs {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--2xs);
+  line-height: var(--leading-2xs);
+}
+.text-xs {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--xs);
+  line-height: var(--leading-xs);
+}
+.text-sm {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--sm);
+  line-height: var(--leading-sm);
+}
+.text-base {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--base);
+  line-height: var(--leading-base);
+}
+.text-tiny {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--tiny);
+  line-height: var(--leading-tiny);
+}
+.text-md {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--md);
+  line-height: var(--leading-md);
+}
+.text-lg {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--lg);
+  line-height: var(--leading-lg);
+}
+.text-xl {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: var(--xl);
+  line-height: var(--leading-xl);
+}
+
+.error-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--2xs);
+  line-height: var(--leading-8);
+  color: var(--red-700);
+}
+
+.link {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--sm);
+  line-height: var(--leading-11);
+  text-decoration: none;
+  color: var(--blue-700);
+}
+
+.link:hover {
+  color: var(--gray-200);
+}
