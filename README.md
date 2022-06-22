@@ -22,7 +22,7 @@
 
 <h3 id="page">Страница в интернете</h3>
 
-- [Ссылка на страницу на Netlify.](https://62b3690012a29417761b95d0--venerable-pavlova-bce12b.netlify.app/)Ссылка на пул реквест
+- [Ссылка на страницу на Netlify.](https://62b3690012a29417761b95d0--venerable-pavlova-bce12b.netlify.app/)
 
 <h3 id="pr">Ссылка на Пулреквест</h3>
 
