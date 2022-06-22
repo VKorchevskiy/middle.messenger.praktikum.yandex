@@ -6,10 +6,18 @@ root.insertAdjacentHTML(
   "afterbegin",
   UserData({
     links: [
-      { href: "#", className: "", children: "Назад" },
-      { href: "#", className: "", children: "Изменить данные" },
-      { href: "#", className: "", children: "Изменить пароль" },
-      { href: "#", className: "", children: "Выйти" },
+      { href: "../../index.html", className: "", children: "Назад" },
+      {
+        href: "./UserDataChange.html",
+        className: "",
+        children: "Изменить данные",
+      },
+      {
+        href: "./PasswordChange.html",
+        className: "",
+        children: "Изменить пароль",
+      },
+      { href: "../../index.html", className: "", children: "Выйти" },
     ],
     userInfoItems: [
       {

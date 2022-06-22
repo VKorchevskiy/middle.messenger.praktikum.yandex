@@ -6,6 +6,6 @@ root.insertAdjacentHTML(
   ErrorPage({
     title: 500,
     description: "Что-то пошло не так",
-    href: "#",
+    href: "./Messenger.html",
   })
 );

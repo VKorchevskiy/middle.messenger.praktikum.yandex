@@ -6,7 +6,7 @@ root.insertAdjacentHTML(
   "afterbegin",
   Form({
     title: "Регистрация",
-    links: [{ href: "#", className: "", children: "Войти" }],
+    links: [{ href: "./SignIn.html", className: "", children: "Войти" }],
     buttons: [
       { type: "button", className: "", children: "Зарегистрироваться" },
     ],

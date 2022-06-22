@@ -4,44 +4,39 @@ const root = document.querySelector("#root");
 
 root.insertAdjacentHTML(
   "afterbegin",
-  COMPONENTS.UserData({
+  COMPONENTS.Form({
+    title: "Разводная страница для удобства",
     links: [
-      { href: "#", className: "", children: "Назад" },
-      { href: "#", className: "", children: "Изменить данные" },
-      { href: "#", className: "", children: "Изменить пароль" },
-      { href: "#", className: "", children: "Выйти" },
-    ],
-    userInfoItems: [
+      { href: "/src/static/404.html", className: "", children: "404" },
+      { href: "/src/static/500.html", className: "", children: "500" },
+      { href: "/src/static/Messenger.html", className: "", children: "Чат" },
       {
+        href: "/src/static/PasswordChange.html",
         className: "",
-        name: "Почта",
-        value: "Почта",
+        children: "Изменение пароля",
       },
       {
+        href: "/src/static/SignIn.html",
         className: "",
-        name: "Логин",
-        value: "Логин",
+        children: "Вход",
       },
       {
+        href: "/src/static/SignUp.html",
         className: "",
-        name: "Имя",
-        value: "Имя",
+        children: "Регистрация",
       },
       {
+        href: "/src/static/User.html",
         className: "",
-        name: "Фамилия",
-        value: "Фамилия",
+        children: "Данные пользователя",
       },
       {
+        href: "/src/static/UserDataChange.html",
         className: "",
-        name: "Имя в чате",
-        value: "Имя в чате",
-      },
-      {
-        className: "",
-        name: "Телефон",
-        value: "Телефон",
+        children: "Изменение данных пользователя",
       },
     ],
+    buttons: [],
+    inputs: [],
   })
 );

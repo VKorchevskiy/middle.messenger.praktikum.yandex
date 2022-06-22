@@ -6,6 +6,6 @@ root.insertAdjacentHTML(
   ErrorPage({
     title: 404,
     description: "Не найдено",
-    href: "#",
+    href: "./Messenger.html",
   })
 );

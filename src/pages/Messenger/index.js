@@ -4,6 +4,6 @@ const root = document.querySelector("#root");
 root.insertAdjacentHTML(
   "afterbegin",
   InWork({
-    href: "#",
+    href: "../../index.html",
   })
 );
