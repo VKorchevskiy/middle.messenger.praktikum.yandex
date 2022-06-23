@@ -1,0 +1,18 @@
+.avatar-change {
+  display: flex;
+  flex-direction: row;
+  justify-self: stretch;
+  justify-content: space-between;
+  align-items: center;
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url("../../../assets/icons/union.svg");
+    background-color: var(--gray-200);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

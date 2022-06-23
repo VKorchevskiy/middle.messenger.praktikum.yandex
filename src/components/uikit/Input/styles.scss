@@ -1,0 +1,34 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    color: var(--gray-700);
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid var(--blue-700);
+    background-color: var(--blue-900);
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+
+  &__input_error {
+    margin-bottom: 7px;
+  }
+
+  &__error {
+    &_visible {
+      display: block;
+    }
+
+    &_hidden {
+      display: none;
+    }
+  }
+
+  &__label {
+    margin-bottom: 8px;
+  }
+}
