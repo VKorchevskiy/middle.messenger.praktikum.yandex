@@ -1,5 +1,8 @@
 import "./styles.scss";
+
 import getRenderedTemplate from "../../../utils/getRenderedTemplate";
+
+import { IUserData } from "./interface";
 
 const USER_DATA = `<div class="wrapper user-data">
     {{> avatar Avatar}}
@@ -10,8 +13,7 @@ const USER_DATA = `<div class="wrapper user-data">
   </div>
   `;
 
-function UserData(props) {
-  //   const { title, links, buttons, inputs } = props;
+function UserData(props: IUserData) {
   return getRenderedTemplate(USER_DATA, props);
 }
 

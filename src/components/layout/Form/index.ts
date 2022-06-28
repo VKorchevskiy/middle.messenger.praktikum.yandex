@@ -1,5 +1,8 @@
 import "./styles.scss";
+
 import getRenderedTemplate from "../../../utils/getRenderedTemplate";
+
+import { IForm } from "./interface";
 
 const FORM = `<form class="wrapper form">
     <p class="form__title">{{title}}</p>
@@ -11,8 +14,7 @@ const FORM = `<form class="wrapper form">
   </form>
   `;
 
-function Form(props) {
-  //   const { title, links, buttons, inputs } = props;
+function Form(props: IForm) {
   return getRenderedTemplate(FORM, props);
 }
 

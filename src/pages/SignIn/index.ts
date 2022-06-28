@@ -2,7 +2,7 @@ import SignForm from "../../components/layout/Form";
 
 const root = document.querySelector("#root");
 
-root.insertAdjacentHTML(
+root?.insertAdjacentHTML(
   "afterbegin",
   SignForm({
     title: "Вход",

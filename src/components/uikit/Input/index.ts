@@ -1,5 +1,8 @@
 import "./styles.scss";
+
 import getRenderedTemplate from "../../../utils/getRenderedTemplate";
+
+import { IInput } from "./interface";
 
 const INPUT = `<div 
   style="{{style}}" class="input {{className}}">
@@ -10,8 +13,7 @@ const INPUT = `<div
   </span>
 </div>`;
 
-function Input(props) {
-  //   const { style, className, name, labelText, type, errorText } = props;
+function Input(props: IInput) {
   return getRenderedTemplate(INPUT, props);
 }
 

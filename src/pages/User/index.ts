@@ -2,7 +2,7 @@ import UserData from "../../components/layout/UserData";
 
 const root = document.querySelector("#root");
 
-root.insertAdjacentHTML(
+root?.insertAdjacentHTML(
   "afterbegin",
   UserData({
     links: [

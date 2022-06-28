@@ -2,12 +2,14 @@ import Form from "../../components/layout/Form";
 
 const root = document.querySelector("#root");
 
-root.insertAdjacentHTML(
+root?.insertAdjacentHTML(
   "afterbegin",
   Form({
-    title: "Изменить данные профиля",
-    links: [{ href: "../../index.html", className: "", children: "Назад" }],
-    buttons: [{ type: "button", className: "", children: "Сохранить" }],
+    title: "Регистрация",
+    links: [{ href: "./SignIn.html", className: "", children: "Войти" }],
+    buttons: [
+      { type: "button", className: "", children: "Зарегистрироваться" },
+    ],
     inputs: [
       {
         style: "",
@@ -44,17 +46,25 @@ root.insertAdjacentHTML(
       {
         style: "",
         className: "",
-        name: "display_name",
-        labelText: "Имя в чате",
+        name: "phone",
+        labelText: "Телефон",
         type: "text",
         errorText: "Ошибка",
       },
       {
         style: "",
         className: "",
-        name: "phone",
-        labelText: "Телефон",
-        type: "text",
+        name: "password",
+        labelText: "Пароль",
+        type: "password",
+        errorText: "Ошибка",
+      },
+      {
+        style: "",
+        className: "",
+        name: "password_too",
+        labelText: "Пароль (ещё раз)",
+        type: "password",
         errorText: "Ошибка",
       },
     ],

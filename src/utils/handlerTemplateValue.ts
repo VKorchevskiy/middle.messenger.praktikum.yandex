@@ -2,13 +2,13 @@ import getValue from "./getValue";
 
 import COMPONENTS from "./COMPONENTS";
 
-function _map(contexts, component) {
+function _map(contexts: any[], component: string) {
   return contexts.length !== 0
     ? contexts.map((item) => COMPONENTS[component](item)).join("")
     : "";
 }
 
-function handlerTemplateValue(context, templateValue) {
+function handlerTemplateValue(context: any, templateValue: string[]) {
   if (templateValue?.length === 1) {
     // console.log(getValue(context, templateValue[0]));
     // console.log(context, templateValue[0]);

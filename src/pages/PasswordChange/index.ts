@@ -2,7 +2,7 @@ import Form from "../../components/layout/Form";
 
 const root = document.querySelector("#root");
 
-root.insertAdjacentHTML(
+root?.insertAdjacentHTML(
   "afterbegin",
   Form({
     title: "Изменить пароль",

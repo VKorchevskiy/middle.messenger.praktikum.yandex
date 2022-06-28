@@ -8,7 +8,7 @@ import Input from "../components/uikit/Input";
 import Link from "../components/uikit/Link";
 import UserInfoItem from "../components/uikit/UserInfoItem";
 
-const COMPONENTS = {
+const COMPONENTS: { [key: string]: (props: any) => string } = {
   Button: Button,
   Input: Input,
   ErrorPage: ErrorPage,

@@ -1,4 +1,4 @@
-function getValue(obj, path, defaultValue) {
+function getValue(obj: any, path: string, defaultValue?: any) {
   const keys = path.split(".");
 
   let result = obj;

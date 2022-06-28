@@ -1,14 +1,14 @@
 import "./styles.scss";
+
 import getRenderedTemplate from "../../../utils/getRenderedTemplate";
 
-const LINK = `<a
-  href="{{href}}"
-  class="link text-base {{className}}">
+import { ILink } from "./interface";
+
+const LINK = `<a href="{{href}}" class="link text-base {{className}}">
     {{children}}
   </a>`;
 
-function Link(props) {
-  // const { href, className, children } = props;
+function Link(props: ILink) {
   return getRenderedTemplate(LINK, props);
 }
 

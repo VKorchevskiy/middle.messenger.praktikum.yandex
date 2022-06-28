@@ -1,22 +1,24 @@
 import handlerTemplateValue from "./handlerTemplateValue";
 
 class Templator {
+  _template;
+
   TEMPLATE_REGEXP = /\{\{(.*?)\}\}/gi;
 
-  constructor(template) {
+  constructor(template: string) {
     this._template = template;
   }
 
-  compile(context) {
+  compile(context: any) {
     return this._compileTemplate(context);
   }
 
-  _compileTemplate = (context) => {
+  _compileTemplate = (context: any) => {
     let template = this._template;
     let key = null;
     const regExp = this.TEMPLATE_REGEXP;
 
-    const arrKeys = template.match(regExp);
+    const arrKeys = template.match(regExp) ?? [];
 
     for (let i = 0; i < arrKeys.length; i++) {
       const templateValueWithPattern = arrKeys[i];

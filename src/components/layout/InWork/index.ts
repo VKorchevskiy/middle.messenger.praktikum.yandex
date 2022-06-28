@@ -1,5 +1,8 @@
 import "./styles.scss";
+
 import getRenderedTemplate from "../../../utils/getRenderedTemplate";
+
+import { IInWork } from "./interface";
 
 const IN_WORK = `<section class="in_work">
   <h1 class="text-xl in_work__title">Страница в работе</h1>
@@ -7,8 +10,7 @@ const IN_WORK = `<section class="in_work">
   <a class="text-xs in_work__link link" href="{{href}}">На разводную страницу</a>
 </section>`;
 
-function InWork(props) {
-  //   const { href } = props;
+function InWork(props: IInWork) {
   return getRenderedTemplate(IN_WORK, props);
 }
 

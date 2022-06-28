@@ -2,7 +2,7 @@ import COMPONENTS from "./utils/COMPONENTS";
 
 const root = document.querySelector("#root");
 
-root.insertAdjacentHTML(
+root?.insertAdjacentHTML(
   "afterbegin",
   COMPONENTS.Form({
     title: "Разводная страница для удобства",
