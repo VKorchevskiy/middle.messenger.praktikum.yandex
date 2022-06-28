@@ -6,7 +6,8 @@
     "dev": "rimraf dist/ && parcel *.html src/static/*.html --dist-dir ./dist",
     "watch": "rimraf static/ .cache/ .parcel-cache/ && parcel build *.html src/static/*.html --dist-dir ./static",
     "build": "parcel build *.html src/static/*.html --dist-dir ./dist",
-    "start": "npm run build && nodemon server.js"
+    "start": "npm run build && nodemon server.js",
+    "lint": "eslint src/"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,12 @@
   "homepage": "https://github.com/VKorchevskiy/middle.messenger.praktikum.yandex#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "2.6.1",
+    "@typescript-eslint/eslint-plugin": "5.30.0",
+    "@typescript-eslint/parser": "5.30.0",
     "browserify-zlib": "0.2.0",
     "buffer": "6.0.3",
     "crypto-browserify": "3.12.0",
+    "eslint": "8.18.0",
     "events": "3.3.0",
     "express": "4.18.1",
     "nodemon": "2.0.16",

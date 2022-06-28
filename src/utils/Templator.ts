@@ -15,7 +15,7 @@ class Templator {
 
   _compileTemplate = (context: any) => {
     let template = this._template;
-    let key = null;
+    // let key = null;
     const regExp = this.TEMPLATE_REGEXP;
 
     const arrKeys = template.match(regExp) ?? [];
