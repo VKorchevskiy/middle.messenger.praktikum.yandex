@@ -4,6 +4,7 @@
 
   &__label {
     color: var(--gray-700);
+    margin-bottom: 8px;
   }
 
   &__input {
@@ -26,9 +27,5 @@
     &_hidden {
       display: none;
     }
-  }
-
-  &__label {
-    margin-bottom: 8px;
   }
 }

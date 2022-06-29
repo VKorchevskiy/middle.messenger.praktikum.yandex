@@ -1,19 +1,19 @@
 @import "../fonts/inter";
 
 :root {
-  --white: #ffffff;
-  --black: #000000;
-  --blue-600: #0066ff;
+  --white: #fff;
+  --black: #000;
+  --blue-600: #06f;
   --blue-700: #3369f3;
   --blue-900: #122331;
   --blue-1000: #102129;
   --red-700: #ff2f2f;
   --gray-200: #efefef;
   --gray-300: #eaeaea;
-  --gray-700: #999999;
+  --gray-700: #999;
   --gray-900: #525252;
-  --3xs: 8px;
-  --2xs: 9px;
+  --xs-3: 8px;
+  --xs-2: 9px;
   --xs: 11px;
   --sm: 12px;
   --base: 13px;
@@ -21,8 +21,8 @@
   --md: 16px;
   --lg: 20px;
   --xl: 40px;
-  --leading-3xs: 10px;
-  --leading-2xs: 11px;
+  --leading-xs-3: 10px;
+  --leading-xs-2: 11px;
   --leading-xs: 13px;
   --leading-sm: 14px;
   --leading-base: 15px;
@@ -33,71 +33,79 @@
 }
 
 .text-3xs {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
-  font-size: var(--3xs);
-  line-height: var(--leading-3xs);
+  font-size: var(--xs-2);
+  line-height: var(--leading-xs-3);
 }
+
 .text-2xs {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
-  font-size: var(--2xs);
-  line-height: var(--leading-2xs);
+  font-size: var(--xs-2);
+  line-height: var(--leading-xs-2);
 }
+
 .text-xs {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-size: var(--xs);
   line-height: var(--leading-xs);
 }
+
 .text-sm {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-size: var(--sm);
   line-height: var(--leading-sm);
 }
+
 .text-base {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-size: var(--base);
   line-height: var(--leading-base);
 }
+
 .text-tiny {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-size: var(--tiny);
   line-height: var(--leading-tiny);
 }
+
 .text-md {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-size: var(--md);
   line-height: var(--leading-md);
 }
+
 .text-lg {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-size: var(--lg);
   line-height: var(--leading-lg);
 }
+
 .text-xl {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-size: var(--xl);
   line-height: var(--leading-xl);
 }
 
 .error-text {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: var(--2xs);
+  font-size: var(--xs-2);
   line-height: var(--leading-8);
   color: var(--red-700);
 }
 
 .link {
-  font-family: "Inter";
+  font-family: Inter, Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: var(--sm);
