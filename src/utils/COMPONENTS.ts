@@ -9,15 +9,15 @@ import Link from "../components/uikit/Link";
 import UserInfoItem from "../components/uikit/UserInfoItem";
 
 const COMPONENTS: { [key: string]: (props: any) => string } = {
-  Button: Button,
-  Input: Input,
-  ErrorPage: ErrorPage,
-  Form: Form,
-  Link: Link,
-  InWork: InWork,
-  UserInfoItem: UserInfoItem,
-  UserData: UserData,
-  Avatar: Avatar,
+  Button,
+  Input,
+  ErrorPage,
+  Form,
+  Link,
+  InWork,
+  UserInfoItem,
+  UserData,
+  Avatar,
 };
 
 export default COMPONENTS;
