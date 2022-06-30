@@ -13,7 +13,7 @@ const USER_DATA = `<div class="wrapper user-data">
   </div>
   `;
 
-function UserData(props: IUserData) {
+function UserData(props: IUserData): string {
   return getRenderedTemplate(USER_DATA, props);
 }
 

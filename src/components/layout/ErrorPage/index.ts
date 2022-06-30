@@ -10,7 +10,7 @@ const ERROR_PAGE = `<section class="error-page">
   <a class="text-xs error-page__link link" href="{{href}}">Назад к чатам</a>
 </section>`;
 
-function ErrorPage(props: IErrorPage) {
+function ErrorPage(props: IErrorPage): string {
   return getRenderedTemplate(ERROR_PAGE, props);
 }
 

@@ -10,7 +10,7 @@ const IN_WORK = `<section class="in-work">
   <a class="text-xs in-work__link link" href="{{href}}">На разводную страницу</a>
 </section>`;
 
-function InWork(props: IInWork) {
+function InWork(props: IInWork): string {
   return getRenderedTemplate(IN_WORK, props);
 }
 

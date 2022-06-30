@@ -2,21 +2,21 @@ import getValue from "./getValue";
 
 import COMPONENTS from "./COMPONENTS";
 
-function map(contexts: any[], component: string) {
+function map<T>(contexts: T[], component: string) {
   return contexts.length !== 0
     ? contexts.map((item: any) => COMPONENTS[component](item)).join("")
     : "";
 }
 
-function getTemplateValue(context: any, templateValue: string[]) {
+function getTemplateValue<T>(context: T, templateValue: string[]) {
   switch (templateValue[0]) {
     case "#for": {
-      const [propsKey, component] = templateValue.slice(1);
-      return map(getValue(context, propsKey), component);
+      const [propsKey, componentName] = templateValue.slice(1);
+      return map(getValue(context, propsKey), componentName);
     }
     case ">": {
-      const [propsKey, component] = templateValue.slice(1);
-      return COMPONENTS[component](getValue(context, propsKey));
+      const [propsKey, componentName] = templateValue.slice(1);
+      return COMPONENTS[componentName](getValue(context, propsKey));
     }
     case "#if": {
       const [propsKey, ifTrue, ifFalse] = templateValue.slice(1);
@@ -29,7 +29,7 @@ function getTemplateValue(context: any, templateValue: string[]) {
   }
 }
 
-function handlerTemplateValue(context: any, templateValue: string[]) {
+function handlerTemplateValue<T>(context: T, templateValue: string[]) {
   return templateValue?.length === 1
     ? getValue(context, templateValue[0])
     : getTemplateValue(context, templateValue);

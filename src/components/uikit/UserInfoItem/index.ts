@@ -9,8 +9,7 @@ const USER_INFO_ITEM = `<div class="user-info-item {{#if className className }}"
   <p class="user-info-item__value text-base">{{value}}</p>
 </div>`;
 
-function UserInfoItem(props: IUserInfoItem) {
-  //   const { className, name, value } = props;
+function UserInfoItem(props: IUserInfoItem): string {
   return getRenderedTemplate(USER_INFO_ITEM, props);
 }
 

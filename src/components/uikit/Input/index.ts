@@ -4,7 +4,7 @@ import getRenderedTemplate from "../../../utils/getRenderedTemplate";
 
 import { IInput } from "./interface";
 
-const INPUT = `<div 
+const INPUT = `<div
   style="{{style}}" class="input {{className}}">
   <label class="input__label text-base" for="{{name}}">{{labelText}}</label>
   <input class="input__input {{#if errorText input__input_error }}" id="{{name}}" name="{{name}}" type="{{type}}" />
@@ -13,7 +13,7 @@ const INPUT = `<div
   </span>
 </div>`;
 
-function Input(props: IInput) {
+function Input(props: IInput): string {
   return getRenderedTemplate(INPUT, props);
 }
 

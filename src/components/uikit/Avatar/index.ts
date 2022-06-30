@@ -9,7 +9,7 @@ const AVATAR = `<div class="avatar-change {{#if className className }}">
    <a class="avatar-change__changed link text-base" >Поменять аватар</a>
 </div>`;
 
-function Avatar(props: IAvatar) {
+function Avatar(props: IAvatar): string {
   return getRenderedTemplate(AVATAR, props);
 }
 

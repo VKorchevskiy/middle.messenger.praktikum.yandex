@@ -9,11 +9,11 @@ class Templator {
     this._template = template;
   }
 
-  compile(context: any) {
+  compile<T>(context: T) {
     return this._compileTemplate(context);
   }
 
-  _compileTemplate = (context: any) => {
+  _compileTemplate = <T>(context: T) => {
     let template = this._template;
     // let key = null;
     const regExp = this.TEMPLATE_REGEXP;

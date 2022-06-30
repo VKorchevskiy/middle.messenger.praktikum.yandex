@@ -1,10 +1,10 @@
-function getValue(obj: any, path: string, defaultValue?: any) {
+function getValue<T>(context: T, path: string, defaultValue?: any) {
   const keys = path.split(".");
 
-  let result = obj;
+  let result = context;
   for (let i = 0; i < keys.length; i++) {
     const key = keys[i];
-    result = result?.[key];
+    result = (result as { [key: string]: any })?.[key];
 
     if (result === undefined) {
       return defaultValue;

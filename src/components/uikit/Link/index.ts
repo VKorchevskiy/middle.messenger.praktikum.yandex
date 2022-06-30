@@ -8,7 +8,7 @@ const LINK = `<a href="{{href}}" class="link text-base {{className}}">
     {{children}}
   </a>`;
 
-function Link(props: ILink) {
+function Link(props: ILink): string {
   return getRenderedTemplate(LINK, props);
 }
 

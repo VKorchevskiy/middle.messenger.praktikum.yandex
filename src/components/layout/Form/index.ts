@@ -14,7 +14,7 @@ const FORM = `<form class="wrapper form">
   </form>
   `;
 
-function Form(props: IForm) {
+function Form(props: IForm): string {
   return getRenderedTemplate(FORM, props);
 }
 
